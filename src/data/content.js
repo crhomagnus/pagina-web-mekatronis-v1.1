@@ -195,6 +195,12 @@ export const GALLERY_IMAGES = [
   { src: '/images/gallery/mekatronisroutercnc-25062021_140026-2465713904.jpg', title: 'Detalhe — Spindle e Estrutura Reforçada', category: 'maquinas' },
   { src: '/images/gallery/mekatronisroutercnc-25062021_140342-2995339545.jpg', title: 'MK1500 — Router CNC com Eixo Z', category: 'maquinas' },
   { src: '/images/gallery/mekatronisroutercnc-26022021_093607-2654148548.jpg', title: 'Router com 4º Eixo Rotativo', category: 'maquinas' },
+  { src: '/images/gallery/468002479_1632291471047030_5920969652992753861_n.jpg', title: 'Usinagem CNC Mekatronis', category: 'maquinas' },
+  { src: '/images/gallery/mekatronisroutercnc-13042023_203317-1626728204.jpg', title: 'Corte Fresadora CNC', category: 'maquinas' },
+  { src: '/images/gallery/mekatronisroutercnc-11082020_235001-2033086673.jpg', title: 'Precisão Router CNC Mekatronis', category: 'maquinas' },
+  { src: '/images/gallery/503040016_694261499972374_3943293230762721383_n.jpg', title: 'Fábrica e Montagem', category: 'maquinas' },
+  { src: '/images/gallery/515271663_1220077816087237_3406048983785910133_n.jpg', title: 'Equipamento Mekatronis em Ação', category: 'maquinas' },
+  { src: '/images/gallery/502735588_1361084675112120_3733164791701359338_n.jpg', title: 'Router CNC Industrial', category: 'maquinas' },
 
   /* === Luthieria === */
   { src: '/images/gallery/mekatronisroutercnc-09072023_010659-1713963452.jpg', title: 'Corpo de Guitarra — Imbuia Figured', category: 'luthieria' },
@@ -205,6 +211,12 @@ export const GALLERY_IMAGES = [
 
   /* === Arte & Decoração === */
   { src: '/images/gallery/mekatronisroutercnc-09072023_010729-2313989085.jpg', title: 'Santa Ceia — Entalhe em Alto Relevo', category: 'decoracao' },
+  { src: '/images/gallery/496853230_996891985898657_4162434970289581996_n.jpg', title: 'Decoração e Entalhe Geométrico CNC', category: 'decoracao' },
+  { src: '/images/gallery/497363955_1956665875142085_6877511387045686478_n.jpg', title: 'Placa Personalizada Decorativa', category: 'decoracao' },
+  { src: '/images/gallery/501890973_1227680508911104_7224470164510738627_n.jpg', title: 'Arte 3D em Madeira Relevo', category: 'decoracao' },
+  { src: '/images/gallery/500998413_1420032946099308_3541203305935703478_n.jpg', title: 'Tábua Artística MDF', category: 'decoracao' },
+  { src: '/images/gallery/502992205_1213341497202789_8529115544611271539_n.jpg', title: 'Painel Decorativo Ripado', category: 'decoracao' },
+  { src: '/images/gallery/496922424_685396660952292_1394324547758969281_n.jpg', title: 'Objeto Decorativo CNC Mekatronis', category: 'decoracao' },
 
   /* === Painéis & Cobogós === */
   { src: '/images/gallery/mekatronisroutercnc-09072023_012609-6072294.jpg', title: 'Painel Geométrico Decorativo — Teto', category: 'paineis' },
