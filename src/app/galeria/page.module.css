@@ -1,0 +1,230 @@
+.hero {
+    position: relative;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    background: url('/images/hero/hero-bg.jpg') center/cover no-repeat;
+    margin-top: calc(-1 * var(--header-height));
+    padding-top: var(--header-height);
+}
+
+.heroOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(13, 51, 17, 0.88), rgba(21, 101, 192, 0.7));
+}
+
+.heroContent {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: var(--white);
+    padding: var(--space-7) 0;
+}
+
+.heroContent h1 {
+    color: var(--white);
+    margin-bottom: var(--space-2);
+}
+
+.heroContent p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+}
+
+.gallery {
+    background: linear-gradient(180deg, #eef1f5 0%, #f0f2f5 100%);
+}
+
+.filters {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: var(--space-6);
+}
+
+.filterBtn {
+    padding: 10px 24px;
+    border-radius: var(--radius-full);
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.85rem;
+    background: var(--white);
+    color: var(--gray-600);
+    border: 2px solid var(--gray-300);
+    transition: var(--transition);
+}
+
+.filterBtn:hover {
+    border-color: var(--green);
+    color: var(--green);
+}
+
+.active {
+    background: var(--green);
+    color: var(--white) !important;
+    border-color: var(--green);
+}
+
+.categoryDesc {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto var(--space-6);
+    color: var(--gray-600);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    font-style: italic;
+}
+
+.grid {
+    columns: 4;
+    column-gap: var(--space-3);
+}
+
+.item {
+    break-inside: avoid;
+    margin-bottom: var(--space-3);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s var(--ease);
+}
+
+.item:hover .img {
+    transform: scale(1.08);
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: var(--space-3);
+    background: linear-gradient(transparent 40%, rgba(0, 0, 0, 0.75));
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.item:hover .overlay {
+    opacity: 1;
+}
+
+.overlayTitle {
+    color: var(--white);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.overlayCategory {
+    color: var(--green-light);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Lightbox */
+.lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    background: rgba(0, 0, 0, 0.92);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+
+.lbClose {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: var(--white);
+    z-index: 2001;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+}
+
+.lbClose:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.lbNav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--white);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    z-index: 2001;
+}
+
+.lbNav:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.lbPrev {
+    left: 20px;
+}
+
+.lbNext {
+    right: 20px;
+}
+
+.lbContent {
+    max-width: 90vw;
+    max-height: 85vh;
+    text-align: center;
+}
+
+.lbImg {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    border-radius: var(--radius-sm);
+}
+
+.lbCaption {
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: var(--space-3);
+    font-size: 0.95rem;
+}
+
+@media (max-width: 1024px) {
+    .grid {
+        columns: 3;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid {
+        columns: 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        columns: 1;
+    }
+}

@@ -1,0 +1,136 @@
+.footer {
+    background: var(--gray-900);
+    color: var(--gray-300);
+    padding: var(--space-8) 0 0;
+}
+
+.inner {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: var(--space-6);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: var(--space-3);
+}
+
+.logoIcon {
+    font-size: 1.8rem;
+    color: var(--green-light);
+}
+
+.logoName {
+    display: block;
+    font-family: var(--font-logo);
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: var(--white);
+    letter-spacing: 3px;
+    line-height: 1.1;
+}
+
+.logoSub {
+    display: block;
+    font-family: var(--font-logo);
+    font-size: 0.84rem;
+    font-weight: normal;
+    color: var(--gray-400);
+    letter-spacing: 3px;
+}
+
+.desc {
+    font-size: 0.9rem;
+    line-height: 1.7;
+    color: var(--gray-400);
+}
+
+.colTitle {
+    font-family: var(--font-heading);
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: var(--space-4);
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.link {
+    font-size: 0.9rem;
+    color: var(--gray-400);
+    transition: var(--transition);
+}
+
+.link:hover {
+    color: var(--green-light);
+    padding-left: 4px;
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: var(--gray-400);
+    margin-bottom: var(--space-2);
+    transition: var(--transition);
+}
+
+.contactItem:hover {
+    color: var(--green-light);
+}
+
+.socialIcons {
+    display: flex;
+    gap: var(--space-3);
+}
+
+.socialIcons a {
+    color: var(--gray-400);
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.socialIcons a:hover {
+    color: var(--white);
+    background: var(--green);
+}
+
+.bottom {
+    margin-top: var(--space-7);
+    padding: var(--space-4) 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: center;
+}
+
+.bottom p {
+    font-size: 0.8rem;
+    color: var(--gray-600);
+}
+
+@media (max-width: 1024px) {
+    .inner {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .inner {
+        grid-template-columns: 1fr;
+        gap: var(--space-5);
+    }
+}

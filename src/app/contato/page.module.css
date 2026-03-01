@@ -1,0 +1,160 @@
+.hero {
+    position: relative;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    background: url('/images/hero/hero-bg.jpg') center/cover no-repeat;
+    margin-top: calc(-1 * var(--header-height));
+    padding-top: var(--header-height);
+}
+
+.heroOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(13, 51, 17, 0.88), rgba(21, 101, 192, 0.7));
+}
+
+.heroContent {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: var(--white);
+    padding: var(--space-7) 0;
+}
+
+.heroContent h1 {
+    color: var(--white);
+    margin-bottom: var(--space-2);
+}
+
+.heroContent p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+}
+
+.contact {
+    background: var(--gray-100);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-6);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.mainCard {
+    background: var(--white);
+    border-radius: var(--radius-md);
+    padding: var(--space-7);
+    text-align: center;
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wpIcon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: rgba(37, 211, 102, 0.12);
+    color: var(--whatsapp);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--space-4);
+}
+
+.mainCard h2 {
+    font-size: 1.5rem;
+    margin-bottom: var(--space-3);
+}
+
+.mainCard p {
+    color: var(--gray-600);
+    margin-bottom: var(--space-5);
+    line-height: 1.6;
+}
+
+.infoCol {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.infoCard {
+    background: var(--white);
+    border-radius: var(--radius-md);
+    padding: var(--space-4);
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.infoCard:hover {
+    transform: translateX(4px);
+    box-shadow: var(--shadow-md);
+}
+
+.infoIcon {
+    color: var(--green);
+    flex-shrink: 0;
+}
+
+.infoCard h4 {
+    font-size: 0.85rem;
+    color: var(--gray-600);
+    margin-bottom: 2px;
+}
+
+.infoCard a,
+.infoCard p {
+    font-size: 0.95rem;
+    color: var(--gray-800);
+}
+
+.infoCard a:hover {
+    color: var(--green);
+}
+
+.socialCard {
+    background: var(--white);
+    border-radius: var(--radius-md);
+    padding: var(--space-4);
+    box-shadow: var(--shadow-sm);
+}
+
+.socialCard h4 {
+    font-size: 0.85rem;
+    color: var(--gray-600);
+    margin-bottom: var(--space-3);
+}
+
+.socialLinks {
+    display: flex;
+    gap: var(--space-3);
+}
+
+.socialLinks a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--gray-800);
+    transition: var(--transition);
+}
+
+.socialLinks a:hover {
+    color: var(--green);
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}

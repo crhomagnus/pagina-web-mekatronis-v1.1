@@ -1,0 +1,198 @@
+.hero {
+    position: relative;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('/images/hero/hero-bg.jpg') center/cover no-repeat;
+    margin-top: calc(-1 * var(--header-height));
+    padding-top: var(--header-height);
+}
+
+.heroOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(13, 51, 17, 0.88), rgba(21, 101, 192, 0.7));
+}
+
+.heroContent {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: var(--white);
+    padding: var(--space-7) 0;
+}
+
+.heroContent h1 {
+    color: var(--white);
+    margin-bottom: var(--space-2);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.heroContent p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+}
+
+.listing {
+    background: var(--gray-100);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-5);
+    margin-bottom: var(--space-8);
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    border-radius: var(--radius-md);
+}
+
+.imgWrap {
+    width: 45%;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s var(--ease);
+}
+
+.card:hover .img {
+    transform: scale(1.06);
+}
+
+.info {
+    padding: var(--space-4);
+    display: flex;
+    flex-direction: column;
+}
+
+.tag {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--green);
+    margin-bottom: var(--space-1);
+}
+
+.name {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+
+.area {
+    font-size: 0.9rem;
+    color: var(--blue);
+    font-weight: 600;
+    margin-bottom: var(--space-2);
+}
+
+.desc {
+    font-size: 0.9rem;
+    color: var(--gray-600);
+    margin-bottom: var(--space-3);
+}
+
+.features {
+    margin-bottom: var(--space-4);
+}
+
+.features li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: var(--gray-800);
+    padding: 3px 0;
+}
+
+.features li svg {
+    color: var(--green);
+    flex-shrink: 0;
+}
+
+.actions {
+    display: flex;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+    margin-top: auto;
+}
+
+/* Comparison Table */
+.comparison {
+    margin-top: var(--space-5);
+}
+
+.tableWrap {
+    overflow-x: auto;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+    font-size: 0.9rem;
+    min-width: 700px;
+}
+
+.table th,
+.table td {
+    padding: 14px 18px;
+    text-align: left;
+    border-bottom: 1px solid var(--gray-300);
+}
+
+.table thead th {
+    background: var(--green-dark);
+    color: var(--white);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.95rem;
+    position: sticky;
+    top: 0;
+}
+
+.table thead th:first-child {
+    border-top-left-radius: var(--radius-md);
+}
+
+.table thead th:last-child {
+    border-top-right-radius: var(--radius-md);
+}
+
+.table tbody tr:hover {
+    background: rgba(27, 94, 32, 0.04);
+}
+
+.table td:first-child {
+    font-weight: 600;
+    color: var(--gray-800);
+    white-space: nowrap;
+}
+
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .imgWrap {
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+}
